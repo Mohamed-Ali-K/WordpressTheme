@@ -5,9 +5,12 @@
         ===========================
 */
 function brocool_script_enqueue() {
-
+                //css//
     wp_enqueue_style( 'customstyle', get_template_directory_uri() . '/css/Brocool.css' , array(),'0.0.1' , 'all' );
-    wp_enqueue_script( 'customscript', get_template_directory_uri() . '/js/brocool.js' , array(),'0.0.1', true );
+    wp_enqueue_style( 'bootstrapcss', get_template_directory_uri() . '/css/bootstrap.min.css' , array(),'3.3.4' , 'all' );
+                //Js//   
+    wp_enqueue_script( 'customscript', get_template_directory_uri() . '/js/brocool.js' , array(),'0.0.1', true ); 
+    wp_enqueue_script( 'bootstrapjs', get_template_directory_uri() . '/js/bootstrap.min.js' , array(),'3.3.4', true );
     wp_enqueue_script( 'jquery');
 }
 add_action( 'wp_enqueue_scripts', 'brocool_script_enqueue');
