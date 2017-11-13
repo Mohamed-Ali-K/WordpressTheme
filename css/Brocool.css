@@ -1,3 +1,7 @@
+body {
+    margin-top: 50px;
+}
+
 .carousel {
     background: #000;
 }
@@ -48,14 +52,39 @@
     padding: 0;
 }
 
-.widget-box li {
-    list-style: none;
+
+/* header search form ================== */
+
+.search-form-container {
+    display: none;
+    position: fixed;
+    top: 50px;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, .35);
+    padding: 20px;
+    z-index: 2;
 }
 
-.widget-box ul {
-    padding: 0px;
+.open-search a {
+    font-size: 0;
+    width: 30px;
+    position: relative;
 }
 
-.widget widget_nav_menu li {
-    list-style: none;
+.open-search a:after {
+    display: block;
+    position: absolute;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    content: "\e003";
+    font-size: 20px;
+    left: 0;
+    top: 50%;
+    line-height: 1em;
+    margin-top: -0.5em;
 }
